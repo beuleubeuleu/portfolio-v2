@@ -1,0 +1,19 @@
+nav {
+  justify-content : space-between;
+  align-items : center;
+  padding: var(--base-padding);
+  gap: 1rem;
+}
+
+.navbar {
+  list-style-type: none;
+  gap: .5em;
+}
+
+.navlinks__title {
+  font-size : var(--fs-big);
+}
+
+.navbar__links img {
+  min-width: 24px;
+}
