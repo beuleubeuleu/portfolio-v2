@@ -8,10 +8,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300;400&family=Montserrat:wght@900&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/greetings.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/competence.css">
 
     <title>Billy Klotz</title>
 </head>
@@ -22,12 +27,62 @@
         <h1 class="navlinks__title">Billy Klotz</h1>
         <ul class="navbar flex">
             <li class="navbar__links">
-                <a href="https://www.linkedin.com/in/billy-k-67626813a/"><img src="assets/LinkedIn-logo.svg" alt="logo Linked In redirige vers mon profil"></a></li>
+                <a href="https://www.linkedin.com/in/billy-k-67626813a/">
+                    <img src="assets/LinkedIn-logo.svg" alt="logo Linked In redirige vers mon profil">
+                </a>
+            </li>
             <li class="navbar__links">
-                <a href="https://github.com/beuleubeuleu"><img src="assets/Github-logo.svg" alt="logo github redirige vers mon profil"></a></li>
+                <a href="https://github.com/beuleubeuleu">
+                    <img src="assets/Github-logo.svg" alt="logo github redirige vers mon profil">
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 
+<section class="bonjour">
+    <p class="greetings">Bonjour !</p>
+</section>
+<section class="intro">
+    <p class="background-text bg-intro-title">À Propos</p>
+    <p class="background-text bg-1">Numérique Responsable</p>
+    <p class="background-text bg-2">Software Craftsmanship</p>
+    <p class="intro__text">Apprenti developpeur sensibilisé aux enjeux du futur</p>
+</section>
+<section class="competence">
+    <p class="background-text bg-competence-title">Mes Competences</p>
+    <p class="background-text bg-competence-vanilla">Vanilla</p>
+    <div class="competence__card">
+        <div class="competence__card--logo flex">
+            <img class="competence__card--logo1" src="assets/html5.svg" alt="logo html">
+            <img class="competence__card--logo2" src="assets/css3.svg" alt="logo cascading style sheet">
+            <img class="competence__card--logo3" src="assets/Javascript.svg" alt="logo javascript">
+        </div>
+        <div class="competence__card--website flex">
+            <embed class="website__exemple" src="https://www.conciergeplatinium.com">
+            <p class="website__text">
+                Interagissez directement ou
+                <a target="_blank" href="https://www.conciergeplatinium.com">Cliquez pour visiter le site</a>
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <ul class="footer__nav">
+        <li class="footer footer_navlink">
+            <a href="./CV-Billy-Klotz-FR.pdf">Mon CV</a>
+        </li>
+        <li class="footer footer_navlink">
+            <a href="mailto:">billyklotz789@gmail.com</a>
+        </li>
+    </ul>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="scrollEffect.js"></script>
 </body>
 </html>

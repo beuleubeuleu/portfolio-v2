@@ -1,8 +1,14 @@
+
+
 nav {
   justify-content : space-between;
   align-items : center;
   padding: var(--base-padding);
-  gap: 1rem;
+  gap: 1em;
+  position: fixed;
+  width: 100%;
+  backdrop-filter : blur(2px);
+  z-index: 99;
 }
 
 .navbar {
@@ -16,4 +22,14 @@ nav {
 
 .navbar__links img {
   min-width: 24px;
+}
+
+@media screen and (min-width: 800px){
+  .navbar__links img {
+    min-width: 48px;
+  }
+
+  .navbar {
+    gap: 1.2em;
+  }
 }

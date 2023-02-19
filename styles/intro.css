@@ -1,0 +1,23 @@
+.intro {
+  display : flex;
+  justify-content : space-around;
+  align-items : center;
+  flex-direction: column;
+}
+
+.intro__text {
+  font-size : var(--fs-big);
+  font-family : var(--ff-primary);
+  font-weight : 300;
+}
+.bg-intro-title{
+  bottom: 80%;
+}
+
+.bg-1 {
+  bottom: 50%
+}
+
+.bg-2 {
+  bottom: 15%;
+}

@@ -9,17 +9,14 @@ img {
   display   : block;
 }
 
-html, body {
-  height : 100%;
-}
-
 :root {
   --font-primary : #333;
   --ff-primary   : "Merriweather", sans-serif;
 
 
-  --fs-small     : clamp(14px, 2vw, 1.2rem);
+  --fs-small     : clamp(12px, 4vw, 1.3rem);
   --fs-big       : clamp(24px, 6vw, 2.5rem);
+  --fs-bg-text : calc( clamp(16px, 4vw, 2.5rem) *2.5);
   --base-padding : 36px;
 
 }
@@ -30,8 +27,25 @@ html, body {
 
 html {
   scroll-behavior : smooth;
-  background      : rgb(185, 185, 185);
-  background      : linear-gradient(14deg, rgba(185, 185, 185, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background      : #EEE;
   color           : var(--font-primary);
   font-family     : var(--ff-primary);
+}
+
+section {
+  height: 100svh;
+  padding: var(--base-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-text {
+  font-size : var(--fs-bg-text);
+  font-family : "Montserrat", sans-serif;
+  opacity: 0.1;
+
+  width: 100%;
+
+  position: absolute;
+  left: -110%;
 }
